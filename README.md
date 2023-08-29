@@ -1,6 +1,8 @@
 # React + TypeScript + Vite
 
-## Simple Html, Css, Js editor for coding
+# Simple code editor for html, css, js
+
+This project is an Online Code Editor built using React and Vite. It provides a user-friendly interface for writing and previewing HTML, CSS, and JavaScript code right in your web browser. Whether you're a beginner learning the basics of web development or an experienced developer prototyping ideas, this editor simplifies the process of experimenting with code.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

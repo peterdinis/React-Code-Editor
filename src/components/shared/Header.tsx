@@ -1,5 +1,5 @@
 import { Toolbar } from "@mui/material";
-import { Container, Logo } from "../../styles/Header.styles";
+import { Container, HeaderText, Logo } from "../../styles/Header.styles";
 import logo from "../../images/logo.png";
 import { FC } from "react";
 
@@ -8,6 +8,7 @@ const Header: FC = () => {
     <Container>
       <Toolbar>
         <Logo src={logo} alt="logo" />
+        <HeaderText>Custom Codepen</HeaderText>
       </Toolbar>
     </Container>
   );

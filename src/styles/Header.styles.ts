@@ -14,3 +14,7 @@ export const Logo = styled("img")({
     padding: "2px",
     borderRadius: "2rem"
 })
+
+export const HeaderText = styled("h2")({
+    marginLeft: "1.5rem"
+})

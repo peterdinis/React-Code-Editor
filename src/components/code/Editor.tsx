@@ -8,7 +8,10 @@ import {
   EditorHeading,
 } from "../../styles/Code.styles";
 import { hyperLink } from "@uiw/codemirror-extensions-hyper-link";
-
+import { okaidia } from '@uiw/codemirror-theme-okaidia';
+import ScrollToTop from "../../hooks/useScroll";
+import { zebraStripes } from '@uiw/codemirror-extensions-zebra-stripes';
+import { lineNumbersRelative } from '@uiw/codemirror-extensions-line-numbers-relative';
 
 interface IEditorProps {
   heading: string;
@@ -65,22 +68,25 @@ const Editor: FC<IEditorProps> = ({
       <CodeMirror
         onChange={handleChange}
         value={value}
-        className="controlled-editor"
+        theme={okaidia}
         basicSetup={{
-          foldGutter: false,
-          dropCursor: false,
-          allowMultipleSelections: false,
-          indentOnInput: false,
+          foldGutter: true,
+          dropCursor: true,
+          allowMultipleSelections: true,
+          indentOnInput: true,
           autocompletion: true,
           searchKeymap: true,
           bracketMatching: true,
           closeBrackets: true,
-          highlightActiveLine: true
+          highlightActiveLine: true,
         }}
         extensions={[
           hyperLink,
+          zebraStripes({ step: 2 }),
+          lineNumbersRelative
         ]}
       />
+      <ScrollToTop />
     </EditorContainer>
   );
 };

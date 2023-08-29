@@ -16,5 +16,6 @@ export const Logo = styled("img")({
 })
 
 export const HeaderText = styled("h2")({
-    marginLeft: "1.5rem"
+    marginLeft: "1.5rem",
+    fontWeight: "bold"
 })

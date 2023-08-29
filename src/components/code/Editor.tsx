@@ -9,9 +9,7 @@ import {
 } from "../../styles/Code.styles";
 import { hyperLink } from "@uiw/codemirror-extensions-hyper-link";
 import { okaidia } from '@uiw/codemirror-theme-okaidia';
-import ScrollToTop from "../../hooks/useScroll";
 import { zebraStripes } from '@uiw/codemirror-extensions-zebra-stripes';
-import { lineNumbersRelative } from '@uiw/codemirror-extensions-line-numbers-relative';
 
 interface IEditorProps {
   heading: string;
@@ -69,6 +67,9 @@ const Editor: FC<IEditorProps> = ({
         onChange={handleChange}
         value={value}
         theme={okaidia}
+        autoSave="true"
+        autoFocus={true}
+        maxHeight="380px"
         basicSetup={{
           foldGutter: true,
           dropCursor: true,
@@ -83,10 +84,8 @@ const Editor: FC<IEditorProps> = ({
         extensions={[
           hyperLink,
           zebraStripes({ step: 2 }),
-          lineNumbersRelative
         ]}
       />
-      <ScrollToTop />
     </EditorContainer>
   );
 };

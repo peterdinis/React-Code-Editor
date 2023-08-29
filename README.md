@@ -1,6 +1,6 @@
 # React + TypeScript + Vite
 
-Simple Html, Css, Js editor for coding
+## Simple Html, Css, Js editor for coding
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

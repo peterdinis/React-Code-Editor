@@ -32,6 +32,8 @@ const Editor: FC<IEditorProps> = ({
     onChange(value);
   };
 
+  console.log(open);
+
   return (
     <EditorContainer>
       <EditorHeader>

@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-.CodeMirror {
-  height: 340px !important;
-  color: #fff;
-}
-
 html::-webkit-scrollbar {
   width: 16px;
   height: 16px;

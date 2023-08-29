@@ -9,6 +9,8 @@ specifiers:
   '@types/react-dom': ^18.2.7
   '@typescript-eslint/eslint-plugin': ^6.0.0
   '@typescript-eslint/parser': ^6.0.0
+  '@uiw/codemirror-extensions-basic-setup': ^4.21.11
+  '@uiw/codemirror-extensions-hyper-link': ^4.21.11
   '@uiw/react-codemirror': ^4.21.11
   '@vitejs/plugin-react': ^4.0.3
   codemirror: 5.65.1
@@ -26,6 +28,8 @@ dependencies:
   '@emotion/styled': 11.11.0_rra5sb3jh6znd7zvpi7zwpaeky
   '@mui/icons-material': 5.14.7_hvgksv7olbtpmqz25nez3rm66u
   '@mui/material': 5.14.7_mcyaowhjtk6juxjmabqaayfcxi
+  '@uiw/codemirror-extensions-basic-setup': 4.21.11
+  '@uiw/codemirror-extensions-hyper-link': 4.21.11
   '@uiw/react-codemirror': 4.21.11_biqbaboplfbrettd7655fr4n2y
   codemirror: 5.65.1
   react: 18.2.0
@@ -1172,6 +1176,13 @@ packages:
       '@codemirror/search': 6.5.2
       '@codemirror/state': 6.2.1
       '@codemirror/view': 6.17.0
+    dev: false
+
+  /@uiw/codemirror-extensions-hyper-link/4.21.11:
+    resolution: {integrity: sha512-5FGeDMgb6cYSv3/GUF1wdBAJkrjRpnyw/mTgewbDvssrVq5BHuHHkRxkL/0XZOh7xWmeBfxbKVtkVNXhPr8K/w==}
+    peerDependencies:
+      '@codemirror/state': '>=6.0.0'
+      '@codemirror/view': '>=6.0.0'
     dev: false
 
   /@uiw/react-codemirror/4.21.11_biqbaboplfbrettd7655fr4n2y:

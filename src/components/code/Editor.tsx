@@ -7,6 +7,7 @@ import {
   EditorHeader,
   EditorHeading,
 } from "../../styles/Code.styles";
+import { hyperLink } from "@uiw/codemirror-extensions-hyper-link";
 
 interface IEditorProps {
   heading: string;
@@ -62,6 +63,20 @@ const Editor: FC<IEditorProps> = ({
         onChange={handleChange}
         value={value}
         className="controlled-editor"
+        basicSetup={{
+          foldGutter: false,
+          dropCursor: false,
+          allowMultipleSelections: false,
+          indentOnInput: false,
+          autocompletion: true,
+          searchKeymap: true,
+          bracketMatching: true,
+          closeBrackets: true,
+          highlightActiveLine: true
+        }}
+        extensions={[
+          hyperLink,
+        ]}
       />
     </EditorContainer>
   );

@@ -8,17 +8,9 @@ import {
   EditorHeading,
 } from "../../styles/Code.styles";
 import { hyperLink } from "@uiw/codemirror-extensions-hyper-link";
-import { okaidia } from '@uiw/codemirror-theme-okaidia';
-import { zebraStripes } from '@uiw/codemirror-extensions-zebra-stripes';
-
-interface IEditorProps {
-  heading: string;
-  language: string;
-  value: string;
-  onChange: any;
-  icon: string;
-  color: string;
-}
+import { okaidia } from "@uiw/codemirror-theme-okaidia";
+import { zebraStripes } from "@uiw/codemirror-extensions-zebra-stripes";
+import { IEditorProps } from "../../interfaces/IEditor";
 
 const Editor: FC<IEditorProps> = ({
   heading,
@@ -81,10 +73,7 @@ const Editor: FC<IEditorProps> = ({
           closeBrackets: true,
           highlightActiveLine: true,
         }}
-        extensions={[
-          hyperLink,
-          zebraStripes({ step: 2 }),
-        ]}
+        extensions={[hyperLink, zebraStripes({ step: 2 })]}
       />
     </EditorContainer>
   );

@@ -4,13 +4,13 @@ import CodeWrapper from "../code/CodeWrapper";
 import CodeResult from "../code/CodeResult";
 
 const Hero: FC = () => {
-    return (
-        <>
-         <Header />
-         <CodeWrapper />
-         <CodeResult />
-        </>
-    )
-}
+  return (
+    <>
+      <Header />
+      <CodeWrapper />
+      <CodeResult />
+    </>
+  );
+};
 
 export default Hero;

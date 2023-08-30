@@ -28,7 +28,7 @@ const CodeResult: FC = () => {
     }, 250);
 
     return () => clearTimeout(timeout);
-  }, [html, css, js]);
+  }, [html, css, js, srcCode]);
 
   return (
     <CodeContainer style={html || css || js ? {} : { background: "#444857" }}>

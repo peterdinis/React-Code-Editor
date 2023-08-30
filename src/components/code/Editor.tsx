@@ -25,10 +25,8 @@ const Editor: FC<IEditorProps> = ({
     onChange(value);
   };
 
-  console.log(open);
-
   return (
-    <EditorContainer>
+    <EditorContainer style={open ? undefined : { flexGrow: 0 }}>
       <EditorHeader>
         <EditorHeading>
           <Box

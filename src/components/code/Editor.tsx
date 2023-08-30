@@ -11,6 +11,9 @@ import { hyperLink } from "@uiw/codemirror-extensions-hyper-link";
 import { okaidia } from "@uiw/codemirror-theme-okaidia";
 import { zebraStripes } from "@uiw/codemirror-extensions-zebra-stripes";
 import { IEditorProps } from "../../interfaces/IEditor";
+import { FileCopy } from "@mui/icons-material";
+import { CopyIcon } from "../../styles/Editor.styles";
+import {toast}from "react-hot-toast";
 
 const Editor: FC<IEditorProps> = ({
   heading,
@@ -24,6 +27,8 @@ const Editor: FC<IEditorProps> = ({
   const handleChange = (value: string) => {
     onChange(value);
   };
+
+  const copiedValue = () =>toast.success("Copied");
 
   return (
     <EditorContainer style={open ? undefined : { flexGrow: 0 }}>
@@ -47,6 +52,16 @@ const Editor: FC<IEditorProps> = ({
           </Box>
           {heading}
         </EditorHeading>
+        <CopyIcon
+          size="small"
+          onClick={() => {
+            navigator.clipboard.writeText(value);
+            copiedValue();
+          }}
+        >
+          <FileCopy fontSize="small" />
+        </CopyIcon>
+
         <CloseFullscreen
           fontSize="small"
           style={{ alignSelf: "center" }}

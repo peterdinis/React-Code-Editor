@@ -8,12 +8,12 @@ import {
   EditorHeading,
 } from "../../styles/Code.styles";
 import { hyperLink } from "@uiw/codemirror-extensions-hyper-link";
-import { okaidia } from "@uiw/codemirror-theme-okaidia";
 import { zebraStripes } from "@uiw/codemirror-extensions-zebra-stripes";
 import { IEditorProps } from "../../interfaces/IEditor";
 import { FileCopy } from "@mui/icons-material";
 import { CopyIcon } from "../../styles/Editor.styles";
 import {toast}from "react-hot-toast";
+import { myTheme } from "./editorTheme";
 
 const Editor: FC<IEditorProps> = ({
   heading,
@@ -71,7 +71,7 @@ const Editor: FC<IEditorProps> = ({
       <CodeMirror
         onChange={handleChange}
         value={value}
-        theme={okaidia}
+        theme={myTheme}
         autoSave="true"
         autoFocus={true}
         maxHeight="380px"

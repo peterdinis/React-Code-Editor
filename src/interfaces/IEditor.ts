@@ -1,10 +1,11 @@
 import { ReactNode } from "react";
+import { SetterOrUpdater } from "recoil"; 
 
 export interface IEditorProps {
   heading: string;
   language: string;
   value: string;
-  onChange: (...args: unknown[]) => void;
+  onChange: SetterOrUpdater<string>;
   icon: ReactNode;
   color: string;
 }

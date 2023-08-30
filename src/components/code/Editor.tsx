@@ -38,7 +38,7 @@ const Editor: FC<IEditorProps> = ({
               borderRadius: 5,
               marginRight: 5,
               height: 20,
-              width: 20,
+              width: 30,
               display: "flex",
               placeContent: "center",
               color: "#000",

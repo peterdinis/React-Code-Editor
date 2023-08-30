@@ -7,6 +7,9 @@ import {
 } from "../../state/atoms/editorAtoms";
 import { CodeWrapperContainer } from "../../styles/Code.styles";
 import Editor from "./Editor";
+import HtmlIcon from '@mui/icons-material/Html';
+import CssIcon from '@mui/icons-material/Css';
+import JavascriptIcon from '@mui/icons-material/Javascript';
 
 const CodeWrapper: FC = () => {
   const [html, setHtml] = useRecoilState(htmlEditorState);
@@ -20,7 +23,7 @@ const CodeWrapper: FC = () => {
         heading="HTML"
         value={html}
         onChange={setHtml}
-        icon="/"
+        icon={<HtmlIcon />}
         color="#FF3C41"
       />
       <Editor
@@ -28,7 +31,7 @@ const CodeWrapper: FC = () => {
         heading="CSS"
         value={css}
         onChange={setCss}
-        icon="*"
+        icon={<CssIcon />}
         color="#0EBEFF"
       />
       <Editor
@@ -36,7 +39,7 @@ const CodeWrapper: FC = () => {
         heading="JS"
         value={js}
         onChange={setJs}
-        icon="( )"
+        icon={<JavascriptIcon />}
         color="#FCD000"
       />
     </CodeWrapperContainer>

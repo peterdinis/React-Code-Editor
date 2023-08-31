@@ -28,7 +28,7 @@ const Editor: FC<IEditorProps> = ({
     onChange(value);
   };
 
-  const copiedValue = () =>toast.success("Copied");
+  const copiedValue = () => toast.success("Copied");
 
   return (
     <EditorContainer style={open ? undefined : { flexGrow: 0 }}>

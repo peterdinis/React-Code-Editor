@@ -25,7 +25,7 @@ const CodeResult: FC = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setSrc(srcCode);
-    }, 50);
+    }, 0);
 
     return () => clearTimeout(timeout);
   }, [html, css, js, srcCode]);

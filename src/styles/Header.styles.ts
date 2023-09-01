@@ -1,4 +1,4 @@
-import { AppBar, styled } from "@mui/material"
+import { AppBar, Toolbar, styled } from "@mui/material"
 
 export const Container = styled(AppBar)`
     background: #060606;
@@ -18,3 +18,5 @@ export const HeaderText = styled("h2")({
     marginLeft: "1.5rem",
     fontWeight: "bold"
 })
+
+export const CustomToolbar = styled(Toolbar)``;

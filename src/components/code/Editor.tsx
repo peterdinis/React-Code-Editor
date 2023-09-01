@@ -8,12 +8,11 @@ import {
   EditorHeading,
 } from "../../styles/Code.styles";
 import { hyperLink } from "@uiw/codemirror-extensions-hyper-link";
-import { zebraStripes } from "@uiw/codemirror-extensions-zebra-stripes";
 import { IEditorProps } from "../../interfaces/IEditor";
 import { FileCopy } from "@mui/icons-material";
 import { CopyIcon } from "../../styles/Editor.styles";
 import {toast}from "react-hot-toast";
-import { myTheme } from "./editorTheme";
+import { myTheme } from "../../utils/editorTheme";
 
 const Editor: FC<IEditorProps> = ({
   heading,
@@ -86,7 +85,7 @@ const Editor: FC<IEditorProps> = ({
           closeBrackets: true,
           highlightActiveLine: true,
         }}
-        extensions={[hyperLink, zebraStripes({ step: 2 })]}
+        extensions={[hyperLink]}
       />
     </EditorContainer>
   );

@@ -6,7 +6,7 @@ import {
   javascriptEditorState,
 } from "../../state/atoms/editorAtoms";
 import { CodeWrapperContainer } from "../../styles/Code.styles";
-import Editor from "./Editor";
+import Editor from "./CodeEditor";
 import HtmlIcon from '@mui/icons-material/Html';
 import CssIcon from '@mui/icons-material/Css';
 import JavascriptIcon from '@mui/icons-material/Javascript';

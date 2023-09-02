@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { SetterOrUpdater } from "recoil"; 
 
-export interface IEditorProps {
+export interface ICodeEditorProps {
   heading: string;
   language: string;
   value: string;

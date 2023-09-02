@@ -8,19 +8,19 @@ import {
   EditorHeading,
 } from "../../styles/Code.styles";
 import { hyperLink } from "@uiw/codemirror-extensions-hyper-link";
-import { IEditorProps } from "../../interfaces/IEditor";
+import { ICodeEditorProps } from "../../interfaces/IEditor";
 import { FileCopy } from "@mui/icons-material";
 import { CopyIcon } from "../../styles/Editor.styles";
 import { toast } from "react-hot-toast";
 import { myTheme } from "../../utils/editorTheme";
 
-const Editor: FC<IEditorProps> = ({
+const CodeEditor: FC<ICodeEditorProps> = ({
   heading,
   value,
   onChange,
   icon,
   color,
-}: IEditorProps) => {
+}: ICodeEditorProps) => {
   const [open, setOpen] = useState(true);
 
   const handleChange = (value: string) => {
@@ -91,4 +91,4 @@ const Editor: FC<IEditorProps> = ({
   );
 };
 
-export default Editor;
+export default CodeEditor;

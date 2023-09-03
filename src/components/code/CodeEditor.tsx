@@ -12,7 +12,7 @@ import { ICodeEditorProps } from "../../interfaces/IEditor";
 import { FileCopy } from "@mui/icons-material";
 import { CopyIcon } from "../../styles/Editor.styles";
 import { toast } from "react-hot-toast";
-import { myTheme } from "../../utils/editorTheme";
+import { editorTheme } from "../../utils/editorTheme";
 
 const CodeEditor: FC<ICodeEditorProps> = ({
   heading,
@@ -70,7 +70,7 @@ const CodeEditor: FC<ICodeEditorProps> = ({
       <CodeMirror
         onChange={handleChange}
         value={value}
-        theme={myTheme}
+        theme={editorTheme}
         autoSave="true"
         autoFocus={true}
         maxHeight="380px"

@@ -1,7 +1,7 @@
 import { createTheme } from "@uiw/codemirror-themes";
 import { tags as t } from "@lezer/highlight";
 
-export const myTheme = createTheme({
+export const editorTheme = createTheme({
     theme: "dark",
     settings: {
       background: "#292727",

@@ -4,7 +4,7 @@ import {
   htmlEditorState,
   cssEditorState,
   javascriptEditorState,
-} from "../../state/atoms/editorAtoms";
+} from "../../recoil/atoms/editorAtoms";
 import { CodeWrapperContainer } from "../../styles/Code.styles";
 import Editor from "./CodeEditor";
 import HtmlIcon from '@mui/icons-material/Html';

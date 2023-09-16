@@ -4,7 +4,7 @@ import {
   htmlEditorState,
   cssEditorState,
   javascriptEditorState,
-} from "../../state/atoms/editorAtoms";
+} from "../../recoil/atoms/editorAtoms";
 import { CodeContainer } from "../../styles/Code.styles";
 
 const CodeResult: FC = () => {

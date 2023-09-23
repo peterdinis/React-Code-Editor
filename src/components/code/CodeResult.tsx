@@ -34,7 +34,7 @@ const CodeResult: FC = () => {
     <CodeContainer style={html || css || js ? {} : { background: "#444857" }}>
       <iframe
         srcDoc={src}
-        title="output"
+        title="code-output"
         sandbox="allow-scripts"
         width="100%"
         height="100%"

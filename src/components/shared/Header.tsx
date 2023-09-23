@@ -12,7 +12,7 @@ const Header: FC = () => {
     <Container>
       <CustomToolbar>
         <Logo src={logo} alt="logo" />
-        <HeaderText>Custom Codepen</HeaderText>
+        <HeaderText>React Codepen</HeaderText>
       </CustomToolbar>
     </Container>
   );

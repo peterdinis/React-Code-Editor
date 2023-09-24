@@ -3,19 +3,13 @@ lockfileVersion: 5.4
 specifiers:
   '@emotion/react': ^11.11.1
   '@emotion/styled': ^11.11.0
-  '@lezer/highlight': ^1.1.6
   '@mui/icons-material': ^5.14.7
   '@mui/material': ^5.14.7
   '@types/react': ^18.2.15
   '@types/react-dom': ^18.2.7
   '@typescript-eslint/eslint-plugin': ^6.0.0
   '@typescript-eslint/parser': ^6.0.0
-  '@uiw/codemirror-extensions-basic-setup': ^4.21.11
   '@uiw/codemirror-extensions-hyper-link': ^4.21.11
-  '@uiw/codemirror-extensions-line-numbers-relative': ^4.21.12
-  '@uiw/codemirror-extensions-zebra-stripes': ^4.21.12
-  '@uiw/codemirror-theme-okaidia': ^4.21.12
-  '@uiw/codemirror-themes': ^4.21.12
   '@uiw/react-codemirror': ^4.21.11
   '@vitejs/plugin-react': ^4.0.3
   eslint: ^8.45.0
@@ -25,21 +19,15 @@ specifiers:
   react-dom: ^18.2.0
   react-hot-toast: ^2.4.1
   recoil: ^0.7.7
-  typescript: ^5.0.2
-  vite: ^4.4.5
+  typescript: ^5.2.2
+  vite: ^4.4.9
 
 dependencies:
   '@emotion/react': 11.11.1_gq4reeurwxuj4hvyerswzzqthy
   '@emotion/styled': 11.11.0_rra5sb3jh6znd7zvpi7zwpaeky
-  '@lezer/highlight': 1.1.6
   '@mui/icons-material': 5.14.7_hvgksv7olbtpmqz25nez3rm66u
   '@mui/material': 5.14.7_mcyaowhjtk6juxjmabqaayfcxi
-  '@uiw/codemirror-extensions-basic-setup': 4.21.11
   '@uiw/codemirror-extensions-hyper-link': 4.21.11
-  '@uiw/codemirror-extensions-line-numbers-relative': 4.21.12
-  '@uiw/codemirror-extensions-zebra-stripes': 4.21.12
-  '@uiw/codemirror-theme-okaidia': 4.21.12
-  '@uiw/codemirror-themes': 4.21.12
   '@uiw/react-codemirror': 4.21.11_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1193,34 +1181,6 @@ packages:
     peerDependencies:
       '@codemirror/state': '>=6.0.0'
       '@codemirror/view': '>=6.0.0'
-    dev: false
-
-  /@uiw/codemirror-extensions-line-numbers-relative/4.21.12:
-    resolution: {integrity: sha512-egLVcgBvFENlB3fv4Jz0Ee0OF+prWaM7EMFEStv5ARQgFKjvnPr9FmspUKRfWgl+Al3Nhu/g3+ofi9C3q1E7pQ==}
-    peerDependencies:
-      '@codemirror/state': '>=6.0.0'
-      '@codemirror/view': '>=6.0.0'
-    dev: false
-
-  /@uiw/codemirror-extensions-zebra-stripes/4.21.12:
-    resolution: {integrity: sha512-Vgo4TR24wh1koQsrUFcwpqUlvCxJHhAwMynCx6w3kXqHT2+nC4zhX2mFKdX9w/NUZsQG6cQUAPvivCBobjcgfQ==}
-    peerDependencies:
-      '@codemirror/state': '>=6.0.0'
-      '@codemirror/view': '>=6.0.0'
-    dev: false
-
-  /@uiw/codemirror-theme-okaidia/4.21.12:
-    resolution: {integrity: sha512-9SnnRMhCjvexel1meLfdoT2RLIi/gUSWkAa68zVwtqESAMSU6CCGNYr8DVDeiigOIKXBdgJtnvwZN+CTHdyFPA==}
-    dependencies:
-      '@uiw/codemirror-themes': 4.21.12
-    dev: false
-
-  /@uiw/codemirror-themes/4.21.12:
-    resolution: {integrity: sha512-mcyVSND6GhYMRw22uHkhVEPZeX9qh/rPjaTxS8ZAWpvpU1JfjcmKNc1gPECmKRrzjPDvH66TbscNmvERd59Pyg==}
-    dependencies:
-      '@codemirror/language': 6.9.0
-      '@codemirror/state': 6.2.1
-      '@codemirror/view': 6.17.0
     dev: false
 
   /@uiw/react-codemirror/4.21.11_biqbaboplfbrettd7655fr4n2y:

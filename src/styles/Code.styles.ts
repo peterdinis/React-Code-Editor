@@ -8,6 +8,7 @@ export const CodeWrapperContainer = styled(Box)`
   background-color: #060606;
   height: 50vh;
   display: flex;
+  overflow-x: scroll;
 `;
 
 export const EditorContainer = styled(Box)`

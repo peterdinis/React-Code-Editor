@@ -1,8 +1,8 @@
-import { FC } from "react";
-import Hero from "../components/hero/Hero";
+import { FC } from 'react';
+import Hero from '../components/hero/Hero';
 
 const Homepage: FC = () => {
-    return <Hero />
-}
+  return <Hero />;
+};
 
 export default Homepage;

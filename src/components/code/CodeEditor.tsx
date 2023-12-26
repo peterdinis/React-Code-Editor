@@ -1,17 +1,17 @@
-import CodeMirror from "@uiw/react-codemirror";
-import { Box } from "@mui/material";
-import { CloseFullscreen } from "@mui/icons-material";
-import { FC, useState } from "react";
+import CodeMirror from '@uiw/react-codemirror';
+import { Box } from '@mui/material';
+import { CloseFullscreen } from '@mui/icons-material';
+import { FC, useState } from 'react';
 import {
   EditorContainer,
   EditorHeader,
   EditorHeading,
-} from "../../styles/Code.styles";
-import { hyperLink } from "@uiw/codemirror-extensions-hyper-link";
-import { ICodeEditorProps } from "../../interfaces/IEditor";
-import { FileCopy } from "@mui/icons-material";
-import { CopyIcon } from "../../styles/Editor.styles";
-import { toast } from "react-hot-toast";
+} from '../../styles/Code.styles';
+import { hyperLink } from '@uiw/codemirror-extensions-hyper-link';
+import { ICodeEditorProps } from '../../interfaces/IEditor';
+import { FileCopy } from '@mui/icons-material';
+import { CopyIcon } from '../../styles/Editor.styles';
+import { toast } from 'react-hot-toast';
 
 const CodeEditor: FC<ICodeEditorProps> = ({
   heading,
@@ -26,23 +26,23 @@ const CodeEditor: FC<ICodeEditorProps> = ({
     onChange(value);
   };
 
-  const copiedValue = () => toast.success("Copied");
+  const copiedValue = () => toast.success('Copied');
 
   return (
     <EditorContainer style={open ? undefined : { flexGrow: 0 }}>
       <EditorHeader>
         <EditorHeading>
           <Box
-            component="span"
+            component='span'
             style={{
               background: color,
               borderRadius: 5,
               marginRight: 5,
               height: 20,
               width: 30,
-              display: "flex",
-              placeContent: "center",
-              color: "#000",
+              display: 'flex',
+              placeContent: 'center',
+              color: '#000',
               paddingBottom: 2,
             }}
           >
@@ -51,28 +51,28 @@ const CodeEditor: FC<ICodeEditorProps> = ({
           {heading}
         </EditorHeading>
         <CopyIcon
-          size="small"
+          size='small'
           onClick={() => {
             navigator.clipboard.writeText(value);
             copiedValue();
           }}
         >
-          <FileCopy fontSize="small" />
+          <FileCopy fontSize='small' />
         </CopyIcon>
 
         <CloseFullscreen
-          fontSize="small"
-          style={{ alignSelf: "center" }}
+          fontSize='small'
+          style={{ alignSelf: 'center' }}
           onClick={() => setOpen((prevState) => !prevState)}
         />
       </EditorHeader>
       <CodeMirror
         onChange={handleChange}
         value={value}
-        theme={"dark"}
-        autoSave="true"
+        theme={'dark'}
+        autoSave='true'
         autoFocus={true}
-        maxHeight="380px"
+        maxHeight='380px'
         basicSetup={{
           foldGutter: true,
           dropCursor: true,

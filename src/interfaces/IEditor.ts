@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { SetterOrUpdater } from "recoil"; 
+import { ReactNode } from 'react';
+import { SetterOrUpdater } from 'recoil';
 
 export interface ICodeEditorProps {
   heading: string;

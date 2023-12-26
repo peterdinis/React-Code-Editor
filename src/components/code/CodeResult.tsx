@@ -1,14 +1,14 @@
-import { FC, useState, useEffect } from "react";
-import { useRecoilState } from "recoil";
+import { FC, useState, useEffect } from 'react';
+import { useRecoilState } from 'recoil';
 import {
   htmlEditorState,
   cssEditorState,
   javascriptEditorState,
-} from "../../recoil/atoms/editorAtoms";
-import { CodeContainer } from "../../styles/Code.styles";
+} from '../../recoil/atoms/editorAtoms';
+import { CodeContainer } from '../../styles/Code.styles';
 
 const CodeResult: FC = () => {
-  const [src, setSrc] = useState("");
+  const [src, setSrc] = useState('');
 
   const [html] = useRecoilState(htmlEditorState);
   const [css] = useRecoilState(cssEditorState);
@@ -31,13 +31,13 @@ const CodeResult: FC = () => {
   }, [html, css, js, srcCode]);
 
   return (
-    <CodeContainer style={html || css || js ? {} : { background: "#444857" }}>
+    <CodeContainer style={html || css || js ? {} : { background: '#444857' }}>
       <iframe
         srcDoc={src}
-        title="code-output"
-        sandbox="allow-scripts"
-        width="100%"
-        height="100%"
+        title='code-output'
+        sandbox='allow-scripts'
+        width='100%'
+        height='100%'
       />
     </CodeContainer>
   );
